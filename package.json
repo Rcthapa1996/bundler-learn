@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=development",
+    "build-prod": "webpack --mode=production"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "loadsh": "^0.0.4"
+    "loadsh": "^0.0.4",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "webpack": "^5.76.3",
