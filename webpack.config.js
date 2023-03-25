@@ -1,10 +1,13 @@
+const path = require("path");
+console.log("Testing......", __dirname, path.resolve(__dirname, "dist1"));
 module.exports = [
   {
     entry: {
-      hello: "./src/index.js",
-      helloProd: "./src/index2.js",
+      mainDev: "./src/index.js",
+      //   helloProd: "./src/index2.js",
     },
     mode: "development",
+    name: "dev",
   },
   {
     entry: "./src/index2.js",
@@ -12,5 +15,6 @@ module.exports = [
     output: {
       filename: "mainProd.js",
     },
+    name: "prod",
   },
 ];
